@@ -1,12 +1,14 @@
+
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    background: #f4f6f8;
-    color: #222;
+    background: #f7f9fb;
+    color: #232a34;
 }
 nav {
-    background: #1a237e;
+    background: #14213d;
     padding: 1em 0;
+    box-shadow: 0 2px 8px rgba(20,33,61,0.08);
 }
 nav ul {
     list-style: none;
@@ -22,39 +24,72 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.2s;
+    letter-spacing: 0.5px;
+    transition: color 0.2s, border-bottom 0.2s;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
 }
 nav ul li a:hover {
-    color: #ffb300;
+    color: #fca311;
+    border-bottom: 2px solid #fca311;
 }
 .hero {
     text-align: center;
     padding: 4em 2em;
     background: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 16px rgba(20,33,61,0.07);
     margin: 2em auto;
     max-width: 700px;
-    border-radius: 12px;
+    border-radius: 16px;
 }
 section {
     margin: 2em auto;
     max-width: 700px;
     background: #fff;
     padding: 2em;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(20,33,61,0.07);
 }
 footer {
     text-align: center;
     padding: 2em 0;
-    background: #1a237e;
+    background: #14213d;
     color: #fff;
     position: fixed;
     width: 100%;
     bottom: 0;
+    font-size: 1em;
+    letter-spacing: 0.5px;
 }
 h1, h2, h3 {
-    color: #1a237e;
+    color: #14213d;
+    margin-bottom: 0.5em;
+}
+h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+}
+h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+h3 {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+blockquote {
+    background: #fca31122;
+    border-left: 4px solid #fca311;
+    padding: 1em;
+    margin: 1.5em 0;
+    font-style: italic;
+    color: #232a34;
+}
+ul {
+    padding-left: 1.2em;
+}
+li {
+    margin-bottom: 0.5em;
 }
 @media (max-width: 600px) {
     nav ul {
@@ -62,5 +97,8 @@ h1, h2, h3 {
     }
     .hero, section {
         padding: 1em;
+    }
+    footer {
+        font-size: 0.9em;
     }
 }
